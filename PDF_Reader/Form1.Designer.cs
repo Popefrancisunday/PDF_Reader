@@ -41,10 +41,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.axAcroPDF1.Enabled = true;
-            this.axAcroPDF1.Location = new System.Drawing.Point(24, 55);
+            this.axAcroPDF1.Location = new System.Drawing.Point(24, 68);
             this.axAcroPDF1.Name = "axAcroPDF1";
             this.axAcroPDF1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axAcroPDF1.OcxState")));
-            this.axAcroPDF1.Size = new System.Drawing.Size(701, 374);
+            this.axAcroPDF1.Size = new System.Drawing.Size(701, 364);
             this.axAcroPDF1.TabIndex = 0;
             // 
             // Open_file
@@ -80,6 +80,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(749, 444);
             this.Controls.Add(this.Other_files);
             this.Controls.Add(this.Open_file);
