@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace PDF_Reader
 {
@@ -23,6 +24,16 @@ namespace PDF_Reader
             if (File.ShowDialog()==DialogResult.OK)
             {
                 axAcroPDF1.src = File.FileName;
+            }
+        }
+
+        private void Other_files_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog File = new OpenFileDialog();
+            if (File.ShowDialog()==DialogResult.OK)
+            {
+                String FilePath = File.FileName;
+                Process.Start(FilePath);
             }
         }
     }
