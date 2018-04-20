@@ -10,11 +10,20 @@ using System.Windows.Forms;
 
 namespace PDF_Reader
 {
-    public partial class Form1 : Form
+    public partial class Pdf_form : Form
     {
-        public Form1()
+        public Pdf_form()
         {
             InitializeComponent();
+        }
+
+        private void Open_file_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog File = new OpenFileDialog();
+            if (File.ShowDialog()==DialogResult.OK)
+            {
+                axAcroPDF1.src = File.FileName;
+            }
         }
     }
 }
